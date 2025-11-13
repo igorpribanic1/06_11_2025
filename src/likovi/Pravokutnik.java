@@ -40,4 +40,9 @@ public class Pravokutnik extends Likovi {
         opseg = 2 * a + 2 * b;
         return opseg;
     }
+
+    @Override
+    public int compareTo(Likovi o) {
+        return Double.valueOf(povrsina()).compareTo(Double.valueOf(o.povrsina()));
+    }
 }

@@ -59,4 +59,9 @@ public class Trokut extends Likovi {
                 "Opseg trokuta=" + opseg() + ", " +
                 "Površina trokuta=" + povrsina();
     }
+
+    @Override
+    public int compareTo(Likovi o) {
+        return Double.valueOf(povrsina()).compareTo(Double.valueOf(o.povrsina()));
+    }
 }

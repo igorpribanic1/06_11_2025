@@ -1,6 +1,6 @@
 package likovi;
 
-public class Krug extends Likovi {
+public class Krug extends Likovi{
     //private String naziv;
     private double r;
     private double opseg;
@@ -29,5 +29,10 @@ public class Krug extends Likovi {
     public double povrsina(){
         povrsina = Math.pow(r, 2) * Math.PI;
         return povrsina;
+    }
+
+    @Override
+    public int compareTo(Likovi o) {
+        return Double.valueOf(povrsina()).compareTo(Double.valueOf(o.povrsina()));
     }
 }

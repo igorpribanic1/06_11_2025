@@ -1,6 +1,6 @@
 package likovi;
 
-public abstract class Likovi {
+public abstract class Likovi implements Comparable<Likovi>{
     private String naziv;
     public abstract double povrsina();
     public abstract double opseg();
@@ -24,4 +24,6 @@ public abstract class Likovi {
                 "Opseg=" + opseg() + ", " +
                 "Površina=" + povrsina();
     }
+
+
 }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import likovi.*;
 
-public class Main {
+public class Main{
     public static void main(String[] args) {
         String lik = "";
         String naziv = "";
